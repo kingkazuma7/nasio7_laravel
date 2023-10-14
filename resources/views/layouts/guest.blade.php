@@ -13,8 +13,17 @@
         <!-- Scripts -->
         {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
         
-        <link rel="stylesheet" href="{{ mix(config('app.config.mix_path').'css/app.css') }}">
-        <script src="{{ mix(config('app.config.mix_path').'js/app.js') }}" defer></script>
+        @if(config('app.env') === 'localhost')
+            <link rel="stylesheet" href="{{ mix(config('app.config.mix_path').'css/app.css') }}">
+        @else
+            <link rel="stylesheet" href="{{ mix(config('app.config.mix_path').'public/css/app.css') }}">
+        @endif
+        
+        @if(config('app.env') === 'localhost')
+            <script src="{{ mix(config('app.config.mix_path').'js/app.js') }}" defer></script>
+        @else
+            <script src="{{ mix(config('app.config.mix_path').'public/js/app.js') }}" defer></script>
+        @endif
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">
