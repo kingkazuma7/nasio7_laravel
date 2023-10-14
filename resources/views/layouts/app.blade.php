@@ -13,13 +13,13 @@
         <!-- Scripts -->
         {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
         
-        @if(config('app.env') === 'localhost')
+        @if(config('app.env') === 'local')
             <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         @else
             <link rel="stylesheet" href="{{ mix('public/css/app.css') }}">
         @endif
 
-        @if(config('app.env') === 'localhost')
+        @if(config('app.env') === 'local')
             <script src="{{ mix('js/app.js') }}" defer></script>
         @else
             <script src="{{ mix('public/js/app.js') }}" defer></script>
