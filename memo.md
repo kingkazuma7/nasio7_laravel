@@ -6,3 +6,8 @@
 - app/Http/Controllers/ComponentTestController.php コントローラー
   - コントローラーに変数
   - `:message="$message"` 属性じゃないので先頭に`:`
+- クラスベース作成
+  - php artisan make:component TestClassBase
+  - `app/View/Components/TestClassBase.php`
+  - `resources/views/components/tests/test-class-base-component.blade.php`
+- 
