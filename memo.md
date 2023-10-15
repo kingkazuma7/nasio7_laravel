@@ -10,4 +10,5 @@
   - php artisan make:component TestClassBase
   - `app/View/Components/TestClassBase.php`
   - `resources/views/components/tests/test-class-base-component.blade.php`
-- 
+  - 基本bladeコンポ
+  - 変数分離ならクラスベース
