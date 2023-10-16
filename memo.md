@@ -12,3 +12,10 @@
   - `resources/views/components/tests/test-class-base-component.blade.php`
   - 基本bladeコンポ
   - 変数分離ならクラスベース
+
+## sec03
+- ライフサイクル
+  - サービスコンテナ 重要
+  - web.phpでRoute コントローラー追記
+   -  php artisan make:controller LifeCycleTestController　作成
+   - コントローラーのなかでshowServiceContainerTestメソッドが必要
