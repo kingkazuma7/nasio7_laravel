@@ -2,3 +2,4 @@
 
 - https://github.com/kingkazuma7/nasio7_laravel
 - /Applications/MAMP/htdocs/Web/PHP/nasio7_laravel
+- ドメイン: laravel.nasio7.com
