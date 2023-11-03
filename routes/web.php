@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->middleware(['auth.users'])->name('dashboard');
 
 Route::get('component-test1', [ComponentTestController::class, 'showComponent1']); // showComponent1はメソッド名s
 Route::get('component-test2', [ComponentTestController::class, 'showComponent2']);
