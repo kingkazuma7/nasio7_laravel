@@ -16,7 +16,7 @@
         @if(config('app.env') === 'local')
             <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         @else
-            <link rel="stylesheet" href="{{ mix('public/css/app.css') }}">
+            <link rel="stylesheet" href="{{ mix('nasio7_laravel/public/css/app.css') }}">
         @endif
 
         @if(config('app.env') === 'local')
