@@ -22,8 +22,7 @@
         @if(config('app.env') === 'local')
             <script src="{{ mix('js/app.js') }}" defer></script>
         @else
-            <script src="{{ mix('
-            public/js/app.js') }}" defer></script>
+            <script src="{{ mix('public/js/app.js') }}" defer></script>
         @endif
 
     </head>
